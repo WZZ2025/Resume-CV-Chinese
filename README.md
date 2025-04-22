@@ -16,3 +16,4 @@ This repository contains my academic CV written in LaTeX. The formatting and lay
 ## License
 
 This project is released under the MIT License. You are welcome to use, modify, and distribute it with attribution.
+> Layout inspired by multiple LaTeX resume templates on Overleaf and GitHub.
