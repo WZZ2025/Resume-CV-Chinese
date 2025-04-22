@@ -1,0 +1,150 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[UTF8]{ctex} % 中文支持
+\usepackage[
+    ignoreheadfoot,
+    top=1.8cm,
+    bottom=1.8cm,
+    left=1.8cm,
+    right=1.8cm,
+    footskip=1.0cm
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={绫香的简历},
+    pdfauthor={AKA绫香},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{graphicx}
+\usepackage{wrapfig} % 用于头像环绕排版
+
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\zihao{-3}\color{primaryColor}}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.1cm}{0.1cm}
+
+\renewcommand\labelitemi{$\circ$}
+\newenvironment{highlights}{
+  \begin{itemize}[
+      topsep=0.10cm,
+      parsep=0.10cm,
+      partopsep=0pt,
+      itemsep=0pt,
+      leftmargin=1.5em
+  ]
+}{\end{itemize}}
+
+\newenvironment{onecolentry}{
+  \begin{adjustwidth}{0.2cm}{0.2cm}
+}{\end{adjustwidth}}
+
+\newcommand{\twocolentry}[2]{
+  \noindent
+  \begin{minipage}[t]{0.75\textwidth}
+    #1
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.23\textwidth}
+    \raggedleft\textit{#2}
+  \end{minipage}
+  \vspace{0.4em}
+}
+
+
+\begin{document}
+
+% ---- Header with photo ----
+\begin{minipage}[t]{0.75\textwidth}
+\vspace{0pt}
+{\zihao{2}\textbf{绫香}} \\
+\vspace{0.2cm}
+\href{mailto:lingxiang123@outlook.com}{\faEnvelope[regular]~lingxiang123@outlook.com} \quad 
+\faPhone*~180 **** 8800 \quad
+\href{https://linkedin.com/in/your own link}{\faLinkedinIn~xiang-ling}
+\end{minipage}%
+\hfill %调整头像和个人信息对齐，和下一行中间不要有空格
+\begin{minipage}[t]{0.22\textwidth}
+\vspace*{-1cm} % 向上移动头像
+\begin{flushright}
+\includegraphics[width=2.8cm]{selfie.png}
+\end{flushright}
+\end{minipage}
+
+\vspace*{-0.9cm} % 减少教育背景和title section的间距
+
+
+\section{教育背景}
+
+\noindent\textbf{英国AAA大学 University of AAA} \hfill \quad 卖鱼博士 \hfill 2020--2025 \\
+\quad •导师：Prof. QiQiang Gao；研究方向：市场研究，卖鱼指南
+
+\noindent\textbf{BBB大学 University of BBB} \hfill 卖鱼硕士 \hfill 2018--2019 \\
+\quad •相关课程：高级定量研究方法，买卖市场政策研究
+
+
+\noindent\textbf{中国CCC大学} \hfill \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad 卖鱼学士 \hfill 2014--2018 \\
+\quad •相关课程：统计学，鱼类研究\\
+\quad • 获得XXX奖（2016）、XXX奖（2017）
+
+\vspace{-0.2cm}
+\section{工作经历}
+\noindent\textbf{英国AAA大学-养殖系} \hfill \quad\quad\quad\quad\quad\quad\quad 研究生助教 \hfill 2023--2024 \\
+\quad • 任教课程：鱼类养殖（yuleiyangzhi）\\
+\quad • 主讲ABCDEFG\\
+\quad • 组织QWERTYU\\
+\quad • 设计并开发ASDFGHJ\\
+\quad • 获得\textit{什么奖项或者称号}
+
+
+
+\noindent\textbf{BBB大学-卖鱼系} \hfill \quad\quad\quad\quad\quad\quad\quad 研究生助教 \hfill 2021--2022 \\
+\quad • 任教课程：鱼类研究（Yuleiyanjiu）、养殖市场分析II（Yangzhishichang II）\\
+\quad • 指导 QWERTYU\\
+\quad • 提供ASDFGHJ\\
+\quad • 获得\textit{ZXCVBNM}
+
+\noindent\textbf{江南养鱼达人公司-系统养鱼IT开发部门} \hfill 鱼苗统计专家 \hfill 2019--2020 \\
+\quad • 撰写并编辑POIUYTLKJ。
+
+\vspace{-0.2cm}
+\section{科研成果/项目经历}
+\noindent\textbf{《活性鱼饵对于鱼类繁殖的影响-实证研究》}\textit{(yingwenmingzi)} \hfill 2022年2月 \\
+\quad • 参会/发表于ABC（Workshop on/Journal of ABC）
+\quad • 使用高大强渔场2020年第一季度鱼苗的成长轨迹，进行巴拉巴拉研究，结果证明活性鱼饵对鱼类繁殖有正向因果作用。
+
+\noindent\textbf{提高地域性鱼类在非产地的品质}\textit{（yingwenmingzi）} \hfill 进行中 \\
+\quad • 编不下去了。
+
+\vspace{-0.2cm}
+
+\section{专业技能}
+\noindent\textbf{数据工具：}R, Python，MATLAB
+
+\noindent\textbf{分析方法：}因果分析，AB实验
+
+\noindent\textbf{结果输出：}可视化呈现、报告撰写、学术写作
+
+
+
+
+\end{document}
