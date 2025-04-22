@@ -7,8 +7,8 @@ This repository contains my academic CV written in LaTeX. The formatting and lay
 - Tools: XeLaTeX, `ctex`, `graphicx`, `titlesec`, and other packages
 
 ## Preview
+[Download PDF](./resume.pdf)
 
-<img width="306" alt="image" src="https://github.com/user-attachments/assets/bb03f16b-858a-4277-87fe-0c105a923fdf" />
 
 
 ## License
