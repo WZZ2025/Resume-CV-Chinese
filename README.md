@@ -7,6 +7,8 @@ This repository contains my academic CV written in LaTeX. The formatting and lay
 - Tools: XeLaTeX, `ctex`, `graphicx`, `titlesec`, and other packages
 
 ## Preview
+![Resume Preview](./resume_preview.png)
+
 [Download PDF](./resume.pdf)
 
 
