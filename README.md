@@ -2,7 +2,7 @@
 
 This repository contains my academic CV written in LaTeX. The formatting and layout are custom-built with inspiration from various open-source LaTeX resume templates.
 
-- Author: Wanyu Zhang
+- Author: WZZ2025
 - Language: Chinese and English bilingual
 - Tools: XeLaTeX, `ctex`, `graphicx`, `titlesec`, and other packages
 
